@@ -23,5 +23,3 @@ impl maelstrom::Node for Handler {
         maelstrom::done(runtime, req)
     }
 }
-
-˝
