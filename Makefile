@@ -27,9 +27,10 @@ clean-jepsen:
 
 .PHONY: submit
 submit:
-    gh pr create 								\
-    	--repo  $(ORGANIZATION)/$(COURSE_NAME) 	\
-     	--base main
+	gh pr create 								\
+	    --repo  $(ORGANIZATION)/$(COURSE_NAME) 	\
+     	--base main \
+        --editor
 
 
 ALLOWED_TASKS := echo tso
